@@ -17,7 +17,6 @@
 
     <!-- الصفحة الرئيسية -->
     <div class="container" id="mainContent" style="display: none;">
-        <!-- بطاقة التبرع -->
         <div class="donation-card">
             <div class="card-header">
                 <div class="icon-heart">❤️</div>
@@ -25,39 +24,25 @@
                 <p class="subtitle">ساهم في دعم مشروعنا وكن جزءاً من التغيير</p>
             </div>
 
-            <!-- نموذج بيانات المتبرع -->
             <div class="form-section">
                 <div class="input-group">
-                    <label for="donorName">
-                        <span class="label-icon">👤</span>
-                        الاسم الكامل
-                    </label>
+                    <label for="donorName">👤 الاسم الكامل</label>
                     <input type="text" id="donorName" placeholder="أدخل اسمك (اختياري)">
                 </div>
 
                 <div class="input-group">
-                    <label for="donorEmail">
-                        <span class="label-icon">📧</span>
-                        البريد الإلكتروني
-                    </label>
+                    <label for="donorEmail">📧 البريد الإلكتروني</label>
                     <input type="email" id="donorEmail" placeholder="example@email.com (اختياري)">
                 </div>
 
                 <div class="input-group">
-                    <label for="donorPhone">
-                        <span class="label-icon">📱</span>
-                        رقم الجوال
-                    </label>
+                    <label for="donorPhone">📱 رقم الجوال</label>
                     <input type="tel" id="donorPhone" placeholder="05xxxxxxxx (اختياري)">
                 </div>
             </div>
 
-            <!-- اختيار المبلغ -->
             <div class="amount-section">
-                <label class="section-label">
-                    <span class="label-icon">💰</span>
-                    اختر المبلغ
-                </label>
+                <label class="section-label">💰 اختر المبلغ</label>
                 <div class="amount-buttons" id="amountButtons">
                     <button class="amount-btn" data-amount="10">10 ₪</button>
                     <button class="amount-btn" data-amount="25">25 ₪</button>
@@ -66,29 +51,22 @@
                     <button class="amount-btn" data-amount="250">250 ₪</button>
                     <button class="amount-btn" data-amount="500">500 ₪</button>
                 </div>
-                
                 <div class="custom-amount">
                     <input type="number" id="customAmount" placeholder="أو أدخل مبلغاً مخصصاً" min="1" step="1">
                 </div>
             </div>
 
-            <!-- رسالة مرفقة -->
             <div class="message-section">
-                <label for="donorMessage">
-                    <span class="label-icon">💬</span>
-                    رسالة دعم (اختياري)
-                </label>
+                <label for="donorMessage">💬 رسالة دعم (اختياري)</label>
                 <textarea id="donorMessage" rows="3" placeholder="اكتب رسالتك هنا..."></textarea>
             </div>
 
-            <!-- خيارات إضافية -->
             <div class="options-section">
                 <label class="checkbox-label">
                     <input type="checkbox" id="anonymousCheckbox">
                     <span class="checkbox-custom"></span>
                     <span class="checkbox-text">تبرع بشكل مجهول (لن يظهر اسمي)</span>
                 </label>
-                
                 <label class="checkbox-label">
                     <input type="checkbox" id="shareLocationCheckbox">
                     <span class="checkbox-custom"></span>
@@ -96,16 +74,13 @@
                 </label>
             </div>
 
-            <!-- زر التبرع -->
             <button class="donate-btn" id="donateBtn">
                 <span class="btn-text">تبرع عبر Revolut</span>
                 <span class="btn-icon">💳</span>
             </button>
 
-            <!-- رسائل الحالة -->
             <div class="status-message" id="statusMessage"></div>
 
-            <!-- معلومات إضافية -->
             <div class="info-footer">
                 <div class="security-badges">
                     <span class="badge">🔒 دفع آمن</span>
@@ -116,7 +91,6 @@
             </div>
         </div>
 
-        <!-- نافذة منبثقة للتأكيد -->
         <div class="modal" id="confirmModal">
             <div class="modal-content">
                 <div class="modal-header">
